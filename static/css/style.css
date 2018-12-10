@@ -1,0 +1,23 @@
+.nav.navbar-nav.nav-item-text > li > a {
+    color: white;
+}
+
+.nav.navbar-nav.nav-item-text > li > a:hover {
+    color: wheat;
+}
+
+.navbar-brand.nav-header-item {
+    color:white;
+}
+
+.navbar {
+    padding-left:1rem;
+    padding-right:1rem;
+    background-color:#0050ff;
+    color: white;
+}
+
+.content-div {
+    height: inherit;
+    padding-top: 5rem;
+}
