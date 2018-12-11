@@ -6,21 +6,6 @@ body {
     padding: 0 5%;
 }
 
-@media only screen and (max-width: 640px) {
-    .banner-img {
-        margin-top: 5rem;
-    }
-    .banner-title {
-        margin-top: 0;
-    }
-    h2 {
-        font-size: 18pt;
-    }
-    h4 {
-        font-size: 12pt;
-    }
-}
-
 .nav.navbar-nav.nav-item-text>li>a {
     color: white;
 }
@@ -43,12 +28,15 @@ body {
 .banner {
     position: relative;
     display: block;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 .banner-img {
     border-radius: 0.5rem;
+    min-height: 50vh;
     max-height: 65%;
-    filter: brightness(0.80);
+    filter: brightness(0.75);
 }
 
 .banner-title {
@@ -57,7 +45,7 @@ body {
     text-align: center;
     width: 100%;
     color: white;
-    margin-top: 15%;
+    margin-top: 10%;
     overflow: auto;
 }
 
@@ -147,5 +135,17 @@ body {
         opacity: 1;
         left: -5%;
         top: 0;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .banner-img {
+        min-height: 35vh;
+    }
+    h2 {
+        font-size: 18pt;
+    }
+    h4 {
+        font-size: 12pt;
     }
 }
