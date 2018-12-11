@@ -9,12 +9,17 @@
     <link rel="stylesheet" href="static/css/style.css" />
     <script src="static/js/jquery.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $(".icon").draggable();
+        });
+    </script>
     <title>ML@MCE</title>
 </head>
 
-<body style="padding-top: 5rem;">
+<body>
     <header>
-        <nav class="navbar-default navbar-fixed-top navbar">
+        <nav class="navbar-inverse navbar-fixed-top navbar">
             <div class="navbar-header">
                 <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="icon-bar"></span>
@@ -41,9 +46,82 @@
         </nav>
     </header>
 
-    <main style="height: 100vh;">
+    <main style="min-height: 100vh;" class="col-sm-offset-1 col-sm-10 ">
         <div id="home" class="content-div">
-            Main Content<br />
+            <div class="banner row ">
+                <img src="images/banner.jpg" class="banner-img img-responsive" />
+                <div class="banner-title">
+                    <h2>MachineLearning Workshop</h2>
+                    <h4>at Meenakshi College of Engineering</h4>
+                    <h6>No-12, Vembuliamman Koil Street, West KK Nagar, Chennai-78</h6>
+                    <h5>on MMM DD</h5>
+                </div>
+            </div>
+            <br />
+            <div class="well row">
+                <h4>About the Workshop:</h4>
+                <p class="text-justify">
+                    This event is for students who want to learn and apply ML for real world
+                    applications.
+                    <img class="icon" src="images/ic_presentation.png" style="float: right;" />
+                    <br />
+                    <br />
+                    In the first half of the day, you will learn about the what is machine learning and it's
+                    applications.
+                    <img class="icon" style="float: left; margin-right: 3rem;" src="images/ic_robot.png" />
+                    <br />
+                    <br />
+                    In the second half of the day, you will dive deep on how to build, train, and deploy models using
+                    frameworks such as TensorFlow, Pytorch, and MXNet.
+                </p>
+            </div>
+
+            <div class="well row">
+                <h4>Prerequisites:</h4>
+                <img style="float: left; margin-right: 3rem;" class="icon" src="images/ic_laptop.png" />
+                <br />
+                <p>
+                    <li>
+                        <strong>Laptop</strong> is required for hands-on session.
+                    </li>
+                </p>
+                <p>
+                    Note: A notepad, pen and file will be provided by ourself.</p>
+
+            </div>
+
+            <div class="well row">
+                <div style="display:flex;">
+                    <div class="text-center" style="float: left; flex: 1;">
+                        <img class="icon" src="images/ic_certificate.png" />
+                        <br />
+                        Certificate
+                    </div>
+                    <div class="text-center" style="float: right; flex:1">
+                        <img draggable="true" class="icon" src="images/ic_food.png" />
+                        <br />
+                        Food
+                    </div>
+                </div>
+            </div>
+
+            <div class="well row">
+                <h4>Schedule:</h4>
+                <table class="table table-striped">
+                    <tr>
+                        <td>09:00am - 12:00pm</td>
+                        <td>Morning session</td>
+                    </tr>
+                    <tr>
+                        <td>12:00m - 01:00pm</td>
+                        <td>Lunch</td>
+                    </tr>
+                    <tr>
+                        <td>01:00am - 04:00pm</td>
+                        <td>Afternoon session</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <div id="register" class="content-div">

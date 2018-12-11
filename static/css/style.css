@@ -1,23 +1,74 @@
-.nav.navbar-nav.nav-item-text > li > a {
+body {
+    font-family: cursive;
+    background: linear-gradient(-45deg, black, #272727 25%, black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0 5%;
+}
+
+@media only screen and (max-width: 640px) {
+    .banner-img {
+        margin-top: 5rem;
+    }
+    .banner-title {
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 18pt;
+    }
+    h4 {
+        font-size: 12pt;
+    }
+}
+
+.nav.navbar-nav.nav-item-text>li>a {
     color: white;
 }
 
-.nav.navbar-nav.nav-item-text > li > a:hover {
+.nav.navbar-nav.nav-item-text>li>a:hover {
     color: wheat;
 }
 
 .navbar-brand.nav-header-item {
-    color:white;
-}
-
-.navbar {
-    padding-left:1rem;
-    padding-right:1rem;
-    background-color:#0050ff;
     color: white;
 }
 
+.navbar {
+    border: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+}
+
+.banner {
+    position: relative;
+    display: block;
+}
+
+.banner-img {
+    max-height: 65%;
+    filter: brightness(0.80);
+}
+
+.banner-title {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-top: 15%;
+    overflow: auto;
+}
+
+.banner-title>* {
+    text-shadow: 0 0 12px black;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+}
+
 .content-div {
-    height: inherit;
-    padding-top: 5rem;
+    min-height: inherit;
 }
