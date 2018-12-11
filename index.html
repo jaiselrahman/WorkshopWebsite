@@ -33,11 +33,17 @@
                 animateReverse.render();
             };
 
+            $(".robot").draggable();
             $(".icon").draggable();
             $(".icon").on('click', function (e) {
                 $(e.target).effect("shake", { times: 10 }, "slow");
             });
 
+            $(".robot").on('click', function (e) {
+                $(e.target.firstElementChild).effect("shake", { times: 10 }, "slow");
+                $(".robot").removeClass("robot");
+                $(".robot").off('click');
+            })
             $('.navbar-collapse a').click(function () {
                 $(".navbar-collapse").collapse('hide');
             });
@@ -47,6 +53,7 @@
 </head>
 
 <body>
+    <div class="drop">Try dragging or clicking the icon</div>
     <header>
         <nav class="navbar-inverse navbar-fixed-top navbar">
             <div class="navbar-header">
@@ -97,8 +104,9 @@
                     <br />
                     In the first half of the day, you will learn about the what is machine learning and it's
                     applications.
-                    <img class="icon" style="float: left; margin-right: 3rem;" src="images/ic_robot.png" />
-                    <br />
+                    <div class="robot text-nowrap">
+                        <img class="icon" style="float: left; margin-right: 3rem;" src="images/ic_robot.png" />
+                    </div>
                     <br />
                     In the second half of the day, you will dive deep on how to build, train, and deploy models using
                     frameworks such as TensorFlow, Pytorch, and MXNet.

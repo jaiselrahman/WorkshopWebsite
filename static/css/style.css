@@ -73,6 +73,7 @@ body {
 .content-div {
     min-height: inherit;
 }
+
 .swipe-left {
     animation: swipe-left;
     animation-duration: 0.5s;
@@ -120,5 +121,31 @@ body {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+.robot::after {
+    animation: robot-msg 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    content: 'Hi, tap or drag a icon';
+    position: relative;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.75rem;
+    border-bottom-left-radius: 0;
+    background: blueviolet;
+    color: white;
+    opacity: 0;
+}
+
+@keyframes robot-msg {
+    0% {
+        left: -15%;
+        top: 100%;
+    }
+    100% {
+        opacity: 1;
+        left: -5%;
+        top: 0;
     }
 }
