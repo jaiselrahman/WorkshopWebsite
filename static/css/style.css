@@ -73,17 +73,16 @@ body {
 .content-div {
     min-height: inherit;
 }
-
 .swipe-left {
     animation: swipe-left;
     animation-duration: 0.5s;
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
 }
 
 .swipe-right {
     animation: swipe-right;
     animation-duration: 0.5s;
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
 }
 
 @keyframes swipe-left {
