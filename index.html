@@ -19,9 +19,18 @@
                 offset: [0, 0],
                 reverse: false,
             });
+
+            var animateReverse = new Animate({
+                target: '[data-animate-reverse]',
+                offset: [0, 0],
+                reverse: true,
+            });
+
             animate.init();
+            animateReverse.init();
             window.onload = function () {
                 animate.render();
+                animateReverse.render();
             };
 
             $(".icon").draggable();
@@ -68,7 +77,7 @@
 
     <main style="min-height: 100vh;" class="col-sm-offset-1 col-sm-10 ">
         <div id="home" class="content-div">
-            <div class="banner row" data-animate data-animation-classes="animated popup">
+            <div class="banner row" data-animate-reverse data-animation-classes="animated popup">
                 <img src="images/banner.jpg" class="banner-img img-responsive" />
                 <div class="banner-title">
                     <h2>MachineLearning Workshop</h2>
