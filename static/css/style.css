@@ -1,9 +1,10 @@
 body {
-    font-family: cursive;
-    background: linear-gradient(-45deg, black, #272727 25%, black);
+    font-family: 'Itim', cursive;
+    background: linear-gradient(-45deg, black, #3b3b3b, black 50%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 0 5%;
+    overflow-x: hidden;
 }
 
 .nav.navbar-nav.nav-item-text>li>a {
@@ -45,11 +46,12 @@ body {
     text-align: center;
     width: 100%;
     color: white;
-    margin-top: 10%;
+    margin-top: 15%;
     overflow: auto;
 }
 
 .banner-title>* {
+    margin: 0.2rem 0;
     text-shadow: 0 0 15px black;
 }
 
@@ -142,8 +144,8 @@ body {
     .banner-img {
         min-height: 35vh;
     }
-    h2 {
-        font-size: 18pt;
+    h1 {
+        font-size: 22pt;
     }
     h4 {
         font-size: 12pt;
