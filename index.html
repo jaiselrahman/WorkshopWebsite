@@ -18,13 +18,14 @@
         $(function () {
             var animate = new Animate({
                 offset: [0, 0],
-                reverse: false,
+                remove: false,
             });
 
             var animateReverse = new Animate({
                 target: '[data-animate-reverse]',
                 offset: [0, 0],
                 reverse: true,
+                remove: false,
             });
 
             animate.init();
@@ -34,20 +35,22 @@
                 animateReverse.render();
             };
 
-            $(".robot").draggable();
+            $("#robot").draggable();
             $(".icon").draggable();
             $(".icon").on('click', function (e) {
                 $(e.target).effect("shake", { times: 10 }, "slow");
             });
 
-            $(".robot").on('click', function (e) {
+            $("#robot").on('click', function (e) {
                 $(e.target.firstElementChild).effect("shake", { times: 10 }, "slow");
-                $(".robot").removeClass("robot");
-                $(".robot").off('click');
+                $("#robot").removeClass("robot");
+                $("#robot").off("click");
             })
+
             $('.navbar-collapse a').click(function () {
                 $(".navbar-collapse").collapse('hide');
             });
+
         });
     </script>
     <title>ML@MCE</title>
@@ -104,7 +107,7 @@
                     <br />
                     In the first half of the day, you will learn about the what is machine learning and it's
                     applications.
-                    <div class="robot text-nowrap">
+                    <div id="robot" data-animate data-animation-classes="robot">
                         <img class="icon" style="float: left; margin-right: 3rem;" src="images/ic_robot.png" />
                     </div>
                     <br />

@@ -114,6 +114,10 @@ body {
     }
 }
 
+.robot {
+    white-space: nowrap;
+}
+
 .robot::after {
     animation: robot-msg 1s;
     animation-delay: 1s;
