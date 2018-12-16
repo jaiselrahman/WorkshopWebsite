@@ -67,9 +67,20 @@ body {
 
 .register-form {
     border: none;
-    width: max-content;
-    width:  100%;
-    height: 1246px;
+    width: 100%;
+    height: 1300px;
+    margin-top: 5%;
+}
+
+#contact {
+    padding-top: 5%;
+    margin-top: -10%;
+}
+
+.location-map {
+    border: none;
+    width: 100%;
+    height: 480px;
     margin-top: 5%;
 }
 
@@ -156,6 +167,13 @@ body {
 @media only screen and (max-width: 640px) {
     .banner-img {
         min-height: 35vh;
+    }
+    .location-map {
+        height: 320px;
+    }
+    #contact {
+        padding-top: 10%;
+        margin-top: -8%;
     }
     h1 {
         font-size: 22pt;
