@@ -13,6 +13,7 @@
     <script src="static/js/bootstrap.min.js"></script>
     <script src="static/js/animate.min.js"></script>
     <script src="static/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="static/js/main.js"></script>
     <script>
 
         $(function () {
@@ -51,6 +52,16 @@
                 $(".navbar-collapse").collapse('hide');
             });
 
+            $('.banner-title').ready(function () {
+                var elements = document.getElementsByClassName('txt-rotate');
+                for (var i = 0; i < elements.length; i++) {
+                    var toRotate = elements[i].getAttribute('data-rotate');
+                    var period = elements[i].getAttribute('data-period');
+                    if (toRotate) {
+                        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                    }
+                }
+            });
         });
     </script>
     <title>ML@MCE</title>
@@ -91,7 +102,9 @@
             <div class="banner row" data-animate-reverse data-animation-classes="animated popup">
                 <img src="images/banner.jpg" class="banner-img img-responsive" />
                 <div class="banner-title">
-                    <h1>MachineLearning Workshop</h1>
+                    <h1>Learn
+                        <span class="txt-rotate" data-period="500" data-rotate='[ "to teach machines to learn,", "Machine Learning"]'></span>
+                    </h1>
                     <h4>at Meenakshi College of Engineering</h4>
                     <h6>No-12, Vembuliamman Koil Street, West KK Nagar, Chennai-78</h6>
                     <h5>on MMM DD</h5>
