@@ -2,6 +2,8 @@
 
 A website for machine learning workshop.
 
+Hosted at [ml-mce.netlify.com](https://ml-mce.netlify.com)
+
 ## License
 
     Copyright (c) 2018 Jaisel Rahman
