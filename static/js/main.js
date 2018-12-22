@@ -27,7 +27,7 @@ var TxtRotate = function(el, toRotate, period) {
     var that = this;
     var delta = 70;
   
-    if (this.isDeleting) { delta /= 1.75; }
+    if (this.isDeleting) { delta /= 2; }
   
     if (!this.isDeleting && this.txt === fullTxt) {
       delta = this.period;
