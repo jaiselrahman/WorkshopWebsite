@@ -88,6 +88,10 @@ body {
     margin-top: 5%;
 }
 
+.txt-rotate {
+    border-right: 0.08em solid whitesmoke;
+}
+
 .swipe-left {
     animation: swipe-left;
     animation-duration: 0.5s;
