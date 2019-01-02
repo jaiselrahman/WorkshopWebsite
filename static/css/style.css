@@ -1,10 +1,11 @@
 body {
-    font-family: 'Itim', cursive;
+    font-family: 'Itim';
     background: linear-gradient(-45deg, black, #3b3b3b, black 50%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 0 5%;
     overflow-x: hidden;
+    font-size: medium;
 }
 
 .nav.navbar-nav.nav-item-text>li>a {
@@ -52,7 +53,7 @@ body {
     overflow: auto;
 }
 
-.banner-title>* {
+.banner-title> a > * {
     margin: 0.2rem 0;
     text-shadow: 0 0 15px black;
 }
@@ -78,7 +79,7 @@ body {
 .register-form {
     border: none;
     width: 100%;
-    height: 1300px;
+    height: 1350px;
 }
 
 .location-map {
@@ -184,5 +185,8 @@ body {
     }
     h1 {
         font-size: 20pt;
+    }
+    .register-form {
+        height: 1430px;
     }
 }
