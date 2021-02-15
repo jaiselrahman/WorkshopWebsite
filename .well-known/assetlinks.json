@@ -3,7 +3,6 @@
   "target": {
     "namespace": "android_app",
     "package_name": "com.nexus.walgreens",
-    "sha256_cert_fingerprints":
-    ["DA:E4:41:95:5B:7F:F2:06:4E:96:89:E7:E9:C2:C1:03:0D:7C:CA:30:3E:F0:E0:56:81:56:58:A4:50:48:61:61"]
+    "sha256_cert_fingerprints":["82:F7:42:B1:CC:53:93:CF:EA:78:78:5C:D1:E5:03:59:E0:18:0B:5B:95:BC:1C:48:ED:6D:A0:E2:96:6F:CC:81"]
   }
 }]
