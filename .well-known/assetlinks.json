@@ -2,7 +2,7 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "com.nexus.walgreens",
-    "sha256_cert_fingerprints":["82:F7:42:B1:CC:53:93:CF:EA:78:78:5C:D1:E5:03:59:E0:18:0B:5B:95:BC:1C:48:ED:6D:A0:E2:96:6F:CC:81"]
+    "package_name": "com.instantappdemo.app",
+    "sha256_cert_fingerprints":["CC:00:BB:3C:69:39:70:3B:D5:04:E0:B9:BC:51:D3:8E:A2:31:34:4E:21:8B:08:10:7C:4F:80:E4:E2:BB:F6:DD"]
   }
 }]
